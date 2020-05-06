@@ -1,0 +1,71 @@
+{
+  "name": "rubik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "npm run dev-server",
+    "build": "webpack --config webpack.prod.js",
+    "analyze": "NODE_ENV=production webpack --config webpack.analyze.js",
+    "lint": "eslint . --ext .jsx --ext .js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "less": "^3.9.0",
+    "less-loader": "^6.0.0",
+    "loader-utils": "^2.0.0",
+    "lodash": "^4.17.15",
+    "lodash-webpack-plugin": "^0.11.5",
+    "mini-css-extract-plugin": "^0.9.0",
+    "pre-commit": "^1.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "uglify-js": "^3.9.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.1",
+    "workbox-webpack-plugin": "^5.1.3"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "cubejs": "^1.3.2",
+    "react-bluetooth": "0.0.0",
+    "three": "^0.116.1"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "optionalDependencies": {
+    "fsevents": "^2.0.7"
+  }
+}
